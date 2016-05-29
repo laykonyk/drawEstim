@@ -1,5 +1,5 @@
 #include <iostream>
-#include "Estimator.cpp"
+#include "estimator/Estimator.cpp"
 #include <memory>
 
 using namespace drawestim;

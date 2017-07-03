@@ -14,4 +14,4 @@ ENDMACRO()
 # when other libraries or executables link to Hello
 add_executable (draw_estim_tests AllTest.cpp)
 
-target_link_libraries (draw_estim_tests LINK_PUBLIC estimator fann)
+target_link_libraries (draw_estim_tests LINK_PUBLIC estimator fann libgtest libgmock)

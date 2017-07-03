@@ -12,7 +12,6 @@ MACRO(HEADER_DIRECTORIES return_list)
 ENDMACRO()
 # Make sure the compiler can find include files for our Hello library
 # when other libraries or executables link to Hello
-add_subdirectory(estimator)
-add_executable (draw_estim main.cpp)
+add_executable (draw_estim_tests AllTest.cpp)
 
-target_link_libraries (draw_estim LINK_PUBLIC estimator fann)
+target_link_libraries (draw_estim_tests LINK_PUBLIC estimator fann libgtest libgmock)
